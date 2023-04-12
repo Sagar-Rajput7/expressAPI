@@ -13,6 +13,7 @@ app.get("/", (req, res) => res.send("API Running"));
 
 // Define Routes
 app.use("/api/dataset", require("./routes/api/dataset"));
+app.use("/api/models", require("./routes/api/models"));
 
 const PORT = process.env.PORT || 5001;
 
